@@ -94,7 +94,7 @@ body {
 .btn-apply-nav {
   background: transparent;
   color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #2A2A2A;
   border-radius: 24px;
   padding: 10px 24px;
   font-size: 16px;
@@ -104,8 +104,7 @@ body {
 }
 
 .btn-apply-nav:hover {
-  background: #FFFFFF;
-  color: #0F0F10;
+  background: rgba(255, 255, 255, 0.1);
   border-color: #FFFFFF;
 }
 
