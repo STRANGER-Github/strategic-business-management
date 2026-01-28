@@ -206,7 +206,7 @@ body {
 /* Featured Section */
 .featured-section {
   padding: 80px 60px;
-  background: #0F0F10;
+  background: #F5F5F4;
 }
 
 .featured-container {
@@ -216,10 +216,13 @@ body {
   grid-template-columns: 1fr 1.2fr;
   gap: 60px;
   align-items: center;
+  background: #181818;
+  border-radius: 20px;
+  padding: 60px;
 }
 
 .featured-card {
-  background: #1B1C1E;
+  background: #E6E6E6;
   border-radius: 20px;
   padding: 40px;
   position: relative;
