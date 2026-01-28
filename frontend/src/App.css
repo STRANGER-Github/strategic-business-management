@@ -339,7 +339,7 @@ body {
 /* Programs Section */
 .programs-section {
   padding: 100px 60px;
-  background: #0F0F10;
+  background: #F5F5F4;
 }
 
 .programs-container {
@@ -354,13 +354,13 @@ body {
 .programs-title {
   font-size: 48px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #0F0F0F;
   margin-bottom: 8px;
 }
 
 .programs-subtitle {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #6B6B6B;
   font-weight: 400;
 }
 
