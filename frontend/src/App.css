@@ -289,7 +289,7 @@ body {
 .btn-explore {
   background: transparent;
   color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #2E2E2E;
   border-radius: 30px;
   padding: 14px 32px;
   font-size: 16px;
@@ -303,10 +303,12 @@ body {
 }
 
 .btn-explore:hover {
-  background: #FFFFFF;
-  color: #0F0F10;
+  background: rgba(255, 255, 255, 0.1);
   border-color: #FFFFFF;
-  transform: translateX(4px);
+}
+
+.btn-explore svg {
+  color: #FF7A18;
 }
 
 /* Trust Section */
