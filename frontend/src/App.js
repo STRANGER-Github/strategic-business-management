@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       {/* Navigation */}
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className="navbar !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
         <div className="nav-container">
           <div className="nav-logo">
             <Circle size={40} strokeWidth={2} color="#FFFFFF" />
@@ -44,7 +44,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">Not Your Average<br />B-School</h1>
