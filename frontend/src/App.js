@@ -219,16 +219,16 @@ function App() {
       <section className="philosophy-section !mt-[0px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
         <div className="philosophy-container-new">
           <h2 className="philosophy-text-full !text-8xl !mt-[0px] !mb-[50px] !text-[#FFFFFF]">
-            Education must be Liberate,<br />
+            Education must be Liberate Not Domesticate
+
+
+            <br />
             Not Domesticate
           </h2>
           <div className="newsletter-section-below">
             <p className="newsletter-label !text-3xl !mb-[20px] !text-[#FFFFFF]">Subscribe to our newsletter</p>
             <div className="newsletter-form">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="newsletter-input" />
+              <input type="email" placeholder="Enter your email" className="newsletter-input" />
 
               <button className="btn-subscribe">Subscribe</button>
             </div>
