@@ -26,15 +26,15 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: transparent;
+  background: linear-gradient(to bottom, #111111, #1A1A1A);
   transition: all 0.4s ease;
   padding: 16px 0;
 }
 
 .navbar.scrolled {
-  background: rgba(15, 15, 16, 0.95);
+  background: linear-gradient(to bottom, #111111, #1A1A1A);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #2A2A2A;
 }
 
 .nav-container {
