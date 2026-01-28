@@ -216,7 +216,7 @@ function App() {
       <div className="philosophy-spacer"></div>
 
       {/* Philosophical Banner */}
-      <section className="philosophy-section !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] !rounded-r-[1px]">
+      <section className="philosophy-section !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] !rounded-b-none !rounded-l-[20px] !rounded-r-[20px]">
         <div className="philosophy-container-new">
           <h2 className="philosophy-text-full !text-8xl !mt-[0px] !mb-[50px] !text-[#FFFFFF]">
             Education must be Liberate,<br />
