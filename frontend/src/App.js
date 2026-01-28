@@ -218,7 +218,7 @@ function App() {
       {/* Philosophical Banner */}
       <section className="philosophy-section !mt-[0px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
         <div className="philosophy-container-new">
-          <h2 className="philosophy-text-full !text-7xl !leading-[7rem] !tracking-[0em] !mt-[0px] !mb-[50px] !text-[#FFFFFF]">
+          <h2 className="philosophy-text-full !text-8xl !leading-[7rem] !tracking-[0em] !mt-[0px] !mb-[50px] !text-[#FFFFFF]">
             Education must be Liberate, 
 
 
