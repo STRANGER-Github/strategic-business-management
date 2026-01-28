@@ -522,8 +522,8 @@ body {
 /* Footer */
 .footer {
   padding: 80px 60px 40px;
-  background: #000000;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0F0F0F;
+  border-top: 1px solid #2A2A2A;
 }
 
 .footer-container {
@@ -551,7 +551,7 @@ body {
 
 .footer-link {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #9A9A9A;
   text-decoration: none;
   transition: color 0.3s ease;
   line-height: 1.6;
