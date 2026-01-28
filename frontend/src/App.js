@@ -1,25 +1,51 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import { ArrowRight, Mail, Circle } from 'lucide-react';
+import { ArrowRight, Mail, Circle, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 function App() {
-  const [scrolled, setScrolled] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const scrollSliderRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+      
+      // Show nav when scrolling up, hide when scrolling down
+      if (currentScrollY < lastScrollY && currentScrollY > 100) {
+        setShowNav(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setShowNav(false);
+      } else if (currentScrollY <= 100) {
+        setShowNav(true);
+      }
+      
+      setLastScrollY(currentScrollY);
     };
-    window.addEventListener('scroll', handleScroll);
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
+
+  const scrollPrograms = (direction) => {
+    if (scrollSliderRef.current) {
+      const scrollAmount = 400;
+      scrollSliderRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
     <div className="App">
-      {/* Navigation */}
-      <nav className="navbar !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
+      {/* Premium Container Wrapper */}
+      <div className="premium-container">
+        {/* Navigation */}
+        <nav className={`navbar !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] ${showNav ? 'nav-visible' : 'nav-hidden'}`}>
         <div className="nav-container">
           <div className="nav-logo">
             <Circle size={40} strokeWidth={2} color="#FFFFFF" />
