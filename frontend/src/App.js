@@ -14,7 +14,6 @@ function App() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      // Show nav when scrolling up, hide when scrolling down
       if (currentScrollY < lastScrollY && currentScrollY > 100) {
         setShowNav(true);
       } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
@@ -46,81 +45,99 @@ function App() {
       <div className="premium-container">
         {/* Navigation */}
         <nav className={`navbar !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] ${showNav ? 'nav-visible' : 'nav-hidden'}`}>
-        <div className="nav-container">
-          <div className="nav-logo">
-            <Circle size={40} strokeWidth={2} color="#FFFFFF" />
-          </div>
-          
-          <div className="nav-links">
-            <a href="#about" className="nav-link">About Us</a>
-            <a href="#academics" className="nav-link">Academics</a>
-            <a href="#people" className="nav-link">People</a>
-            <a href="#slrtsbc" className="nav-link">SLRTCI&E</a>
-            <a href="#welfare" className="nav-link">Student Welfare</a>
-            <a href="#admissions" className="nav-link">Admissions</a>
-          </div>
-          
-          <div className="nav-actions">
-            <button className="btn-apply-nav">Apply Now</button>
-            <div className="profile-icon">
-              <Circle size={36} strokeWidth={2} color="#FFFFFF" />
+          <div className="nav-container">
+            <div className="nav-logo">
+              <Circle size={40} strokeWidth={2} color="#FFFFFF" />
+            </div>
+            
+            <div className="nav-links">
+              <a href="#about" className="nav-link">
+                About Us <ChevronDown size={14} className="nav-arrow" />
+              </a>
+              <a href="#academics" className="nav-link">
+                Academics <ChevronDown size={14} className="nav-arrow" />
+              </a>
+              <a href="#people" className="nav-link">
+                People <ChevronDown size={14} className="nav-arrow" />
+              </a>
+              <a href="#slrtsbc" className="nav-link">
+                SLRTCI&E <ChevronDown size={14} className="nav-arrow" />
+              </a>
+              <a href="#welfare" className="nav-link">
+                Student Welfare <ChevronDown size={14} className="nav-arrow" />
+              </a>
+              <a href="#admissions" className="nav-link">
+                Admissions <ChevronDown size={14} className="nav-arrow" />
+              </a>
+            </div>
+            
+            <div className="nav-actions">
+              <button className="btn-apply-nav">Apply Now</button>
+              <div className="profile-icon">
+                <Circle size={36} strokeWidth={2} color="#FFFFFF" />
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      {/* Hero Section */}
-      <section className="hero-section !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
-        <div className="hero-container">
-          <div className="hero-content">
-            <h1 className="hero-title">Not Your Average<br />B-School</h1>
-            <div className="hero-statement">
-              <p className="statement-text !text-left">"Education must be Liberate,<br />Not Domesticate"</p>
+        {/* Hero Section */}
+        <section className="hero-section !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
+          <div className="hero-container">
+            <div className="hero-content">
+              <div className="hero-left">
+                <h1 className="hero-title">Not Your Average<br />B-School</h1>
+              </div>
+              <div className="hero-right">
+                <p className="statement-text !text-left">"Education must be Liberate,<br />Not Domesticate"</p>
+                <button className="btn-enroll">ENROLL NOW</button>
+              </div>
             </div>
           </div>
-          <button className="btn-enroll">
-            ENROLL NOW
-          </button>
-        </div>
-      </section>
+        </section>
 
-      {/* Featured Program Card */}
-      <section className="featured-section">
-        <div className="featured-container">
-          <div className="featured-card">
-            <div className="program-badge">PGDM</div>
-            <h3 className="program-title">PGDM (Multi-Specialisation)</h3>
-            <p className="program-description">
-              A comprehensive postgraduate program designed to shape versatile business leaders
-            </p>
-            <button className="btn-enroll-small">Enroll Now</button>
+        {/* Featured Program Card */}
+        <section className="featured-section">
+          <div className="featured-container">
+            <div className="featured-card">
+              <img 
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=300&fit=crop" 
+                alt="PGDM Program" 
+                className="featured-program-image"
+              />
+              <div className="program-badge">PGDM</div>
+              <h3 className="program-title">PGDM (Multi-Specialisation)</h3>
+              <p className="program-description">
+                A comprehensive postgraduate program designed to shape versatile business leaders
+              </p>
+              <button className="btn-enroll-small">Enroll Now</button>
+            </div>
+            
+            <div className="featured-quote">
+              <h2 className="quote-text">
+                "We Don't Produce Graduates;<br />
+                We Nurture Thinkers Who<br />
+                Redefine The Future."
+              </h2>
+              <button className="btn-explore-inverted">
+                Explore More Courses <ArrowRight size={20} />
+              </button>
+            </div>
           </div>
-          
-          <div className="featured-quote">
-            <h2 className="quote-text">
-              "We Don't Produce Graduates;<br />
-              We Nurture Thinkers Who<br />
-              Redefine The Future."
-            </h2>
-            <button className="btn-explore">
-              Explore More Courses <ArrowRight size={20} />
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Trust Strip */}
       <section className="trust-section">
         <div className="trust-container">
-          <div className="partner-logo">Nietzsche</div>
-          <div className="partner-logo">GlobalBank</div>
-          <div className="partner-logo">Spherule</div>
-          <div className="partner-logo">FeatherDev</div>
-          <div className="partner-logo">Lightbox</div>
+          <div className="partner-tag">Nietzsche</div>
+          <div className="partner-tag">GlobalBank</div>
+          <div className="partner-tag">Spherule</div>
+          <div className="partner-tag">FeatherDev</div>
+          <div className="partner-tag">Lightbox</div>
         </div>
       </section>
 
-      {/* Programs Section */}
+      {/* Programs Section with Slider */}
       <section className="programs-section">
         <div className="programs-container">
           <div className="programs-header">
@@ -128,73 +145,91 @@ function App() {
             <p className="programs-subtitle">Undergraduate/Postgraduate</p>
           </div>
           
-          <div className="programs-grid">
-            <div className="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop"
-                alt="BBA Program"
-                className="program-image" />
-
-              <div className="program-overlay">
-                <h3 className="program-name">BBA (Hons.)</h3>
-                <button className="btn-apply-program">Apply Now</button>
-              </div>
+          <div className="programs-slider-wrapper">
+            <button className="slider-arrow slider-arrow-left" onClick={() => scrollPrograms('left')}>
+              <ChevronLeft size={24} />
+            </button>
+            
+            <div className="programs-slider" ref={scrollSliderRef}>
+              {/* Repeat cards twice for slider effect */}
+              {[...Array(2)].map((_, setIndex) => (
+                <React.Fragment key={setIndex}>
+                  <div className="program-card">
+                    <img 
+                      src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop" 
+                      alt="BBA Program" 
+                      className="program-image"
+                    />
+                    <div className="program-overlay">
+                      <h3 className="program-name">BBA (Hons.)</h3>
+                      <button className="btn-apply-program">Apply Now</button>
+                    </div>
+                  </div>
+                  
+                  <div className="program-card">
+                    <img 
+                      src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop" 
+                      alt="B.Sc. Management" 
+                      className="program-image"
+                    />
+                    <div className="program-overlay">
+                      <h3 className="program-name">B.Sc. Management</h3>
+                      <button className="btn-apply-program">Apply Now</button>
+                    </div>
+                  </div>
+                  
+                  <div className="program-card">
+                    <img 
+                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
+                      alt="PGDM Finance" 
+                      className="program-image"
+                    />
+                    <div className="program-overlay">
+                      <h3 className="program-name">PGDM Finance</h3>
+                      <button className="btn-apply-program">Apply Now</button>
+                    </div>
+                  </div>
+                  
+                  <div className="program-card">
+                    <img 
+                      src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=400&fit=crop" 
+                      alt="PGDM Business Analytics" 
+                      className="program-image"
+                    />
+                    <div className="program-overlay">
+                      <h3 className="program-name">PGDM Business Analytics</h3>
+                      <button className="btn-apply-program">Apply Now</button>
+                    </div>
+                  </div>
+                </React.Fragment>
+              ))}
             </div>
             
-            <div className="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop"
-                alt="B.Sc. Management"
-                className="program-image" />
-
-              <div className="program-overlay">
-                <h3 className="program-name">B.Sc. Management</h3>
-                <button className="btn-apply-program">Apply Now</button>
-              </div>
-            </div>
-            
-            <div className="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
-                alt="PGDM Finance"
-                className="program-image" />
-
-              <div className="program-overlay">
-                <h3 className="program-name">PGDM Finance</h3>
-                <button className="btn-apply-program">Apply Now</button>
-              </div>
-            </div>
-            
-            <div className="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=400&fit=crop"
-                alt="PGDM Business Analytics"
-                className="program-image" />
-
-              <div className="program-overlay">
-                <h3 className="program-name">PGDM Business Analytics</h3>
-                <button className="btn-apply-program">Apply Now</button>
-              </div>
-            </div>
+            <button className="slider-arrow slider-arrow-right" onClick={() => scrollPrograms('right')}>
+              <ChevronRight size={24} />
+            </button>
           </div>
         </div>
       </section>
 
+      {/* Spacer before philosophy */}
+      <div className="philosophy-spacer"></div>
+
       {/* Philosophical Banner */}
       <section className="philosophy-section">
-        <div className="philosophy-container">
-          <h2 className="philosophy-text">
+        <div className="philosophy-container-new">
+          <h2 className="philosophy-text-full">
             Education must be Liberate,<br />
             Not Domesticate
           </h2>
-          <div className="newsletter-section">
+          <div className="newsletter-section-below">
             <p className="newsletter-label">Subscribe to our newsletter</p>
             <div className="newsletter-form">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="newsletter-input" />
-
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="newsletter-input"
+              />
               <button className="btn-subscribe">Subscribe</button>
             </div>
           </div>
@@ -261,8 +296,8 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>);
-
+    </div>
+  );
 }
 
 export default App;
