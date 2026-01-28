@@ -186,7 +186,7 @@ body {
 
 .btn-enroll {
   background: #FFFFFF;
-  color: #0F0F10;
+  color: #0E0E0E;
   border: none;
   border-radius: 30px;
   padding: 18px 48px;
@@ -199,10 +199,8 @@ body {
 }
 
 .btn-enroll:hover {
-  background: #FF7A18;
-  color: #FFFFFF;
+  background: #F0F0F0;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 122, 24, 0.3);
 }
 
 /* Featured Section */
