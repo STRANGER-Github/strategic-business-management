@@ -219,7 +219,7 @@ function App() {
       <section className="philosophy-section !mt-[0px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
         <div className="philosophy-container-new">
           <h2 className="philosophy-text-full !text-8xl !mt-[0px] !mb-[50px] !text-[#FFFFFF]">
-            Education must be Liberate Not Domesticate
+            Education must be Liberate,Not Domesticate
 
 
             <br />
