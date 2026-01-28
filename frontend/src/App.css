@@ -314,9 +314,9 @@ body {
 /* Trust Section */
 .trust-section {
   padding: 60px 60px;
-  background: #0F0F10;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: #FFFFFF;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .trust-container {
@@ -331,7 +331,7 @@ body {
 .partner-logo {
   font-size: 20px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.3);
+  color: #9E9E9E;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
