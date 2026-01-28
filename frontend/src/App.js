@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY < lastScrollY && currentScrollY > 100) {
         setShowNav(true);
       } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
@@ -21,10 +21,10 @@ function App() {
       } else if (currentScrollY <= 100) {
         setShowNav(true);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
@@ -88,7 +88,7 @@ function App() {
                 <h1 className="hero-title">Not Your Average<br />B-School</h1>
               </div>
               <div className="hero-right">
-                <p className="statement-text !text-left">"Education must be Liberate,<br />Not Domesticate"</p>
+                <p className="statement-text !text-left !text-[#FFFFFF]">"Education must be Liberate,<br />Not Domesticate"</p>
                 <button className="btn-enroll">ENROLL NOW</button>
               </div>
             </div>
@@ -99,11 +99,11 @@ function App() {
         <section className="featured-section">
           <div className="featured-container">
             <div className="featured-card">
-              <img 
-                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=300&fit=crop" 
-                alt="PGDM Program" 
-                className="featured-program-image"
-              />
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=300&fit=crop"
+                alt="PGDM Program"
+                className="featured-program-image" />
+
               <div className="program-badge">PGDM</div>
               <h3 className="program-title">PGDM (Multi-Specialisation)</h3>
               <p className="program-description">
@@ -152,14 +152,14 @@ function App() {
             
             <div className="programs-slider" ref={scrollSliderRef}>
               {/* Repeat cards twice for slider effect */}
-              {[...Array(2)].map((_, setIndex) => (
-                <React.Fragment key={setIndex}>
+              {[...Array(2)].map((_, setIndex) =>
+              <React.Fragment key={setIndex}>
                   <div className="program-card">
-                    <img 
-                      src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop" 
-                      alt="BBA Program" 
-                      className="program-image"
-                    />
+                    <img
+                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop"
+                    alt="BBA Program"
+                    className="program-image" />
+
                     <div className="program-overlay">
                       <h3 className="program-name">BBA (Hons.)</h3>
                       <button className="btn-apply-program">Apply Now</button>
@@ -167,11 +167,11 @@ function App() {
                   </div>
                   
                   <div className="program-card">
-                    <img 
-                      src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop" 
-                      alt="B.Sc. Management" 
-                      className="program-image"
-                    />
+                    <img
+                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop"
+                    alt="B.Sc. Management"
+                    className="program-image" />
+
                     <div className="program-overlay">
                       <h3 className="program-name">B.Sc. Management</h3>
                       <button className="btn-apply-program">Apply Now</button>
@@ -179,11 +179,11 @@ function App() {
                   </div>
                   
                   <div className="program-card">
-                    <img 
-                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" 
-                      alt="PGDM Finance" 
-                      className="program-image"
-                    />
+                    <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
+                    alt="PGDM Finance"
+                    className="program-image" />
+
                     <div className="program-overlay">
                       <h3 className="program-name">PGDM Finance</h3>
                       <button className="btn-apply-program">Apply Now</button>
@@ -191,18 +191,18 @@ function App() {
                   </div>
                   
                   <div className="program-card">
-                    <img 
-                      src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=400&fit=crop" 
-                      alt="PGDM Business Analytics" 
-                      className="program-image"
-                    />
+                    <img
+                    src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=600&h=400&fit=crop"
+                    alt="PGDM Business Analytics"
+                    className="program-image" />
+
                     <div className="program-overlay">
                       <h3 className="program-name">PGDM Business Analytics</h3>
                       <button className="btn-apply-program">Apply Now</button>
                     </div>
                   </div>
                 </React.Fragment>
-              ))}
+              )}
             </div>
             
             <button className="slider-arrow slider-arrow-right" onClick={() => scrollPrograms('right')}>
@@ -225,11 +225,11 @@ function App() {
           <div className="newsletter-section-below">
             <p className="newsletter-label">Subscribe to our newsletter</p>
             <div className="newsletter-form">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="newsletter-input"
-              />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="newsletter-input" />
+
               <button className="btn-subscribe">Subscribe</button>
             </div>
           </div>
@@ -296,8 +296,8 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 }
 
 export default App;
