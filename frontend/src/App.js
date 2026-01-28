@@ -223,6 +223,7 @@ function App() {
 
 
 
+
             <br />
             Not Domesticate
           </h2>
@@ -297,7 +298,6 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>);
-}
+    </div>);}
 
 export default App;
