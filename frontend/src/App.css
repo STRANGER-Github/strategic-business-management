@@ -151,6 +151,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
