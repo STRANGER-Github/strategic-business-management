@@ -377,6 +377,8 @@ body {
   aspect-ratio: 3/4;
   cursor: pointer;
   transition: transform 0.4s ease;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .program-card:hover {
