@@ -44,7 +44,7 @@ function App() {
       {/* Premium Container Wrapper */}
       <div className="premium-container">
         {/* Navigation */}
-        <nav className={`navbar !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] ${showNav ? 'nav-visible' : 'nav-hidden'}`}>
+        <nav className="navbar nav-visible !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] !rounded-b-[20px]">
           <div className="nav-container">
             <div className="nav-logo">
               <Circle size={40} strokeWidth={2} color="#FFFFFF" />
