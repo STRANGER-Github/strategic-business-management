@@ -185,6 +185,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 80px;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 800px;
+}
+
+.hero-right {
+  flex: 0 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
 }
 
 .hero-title {
@@ -193,7 +208,6 @@ body {
   line-height: 1.05;
   letter-spacing: -2px;
   color: #FFFFFF;
-  max-width: 800px;
   text-transform: uppercase;
 }
 
