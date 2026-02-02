@@ -418,12 +418,16 @@ body {
   gap: 60px;
 }
 
-.partner-logo {
-  font-size: 20px;
+.partner-tag {
+  font-size: 16px;
   font-weight: 600;
-  color: #9E9E9E;
+  color: #6B6B6B;
   letter-spacing: 1px;
   text-transform: uppercase;
+  background: #F5F5F5;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 1px solid #E5E5E5;
 }
 
 /* Programs Section */
