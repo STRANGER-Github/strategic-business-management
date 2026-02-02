@@ -77,10 +77,23 @@ body {
   font-weight: 400;
   transition: color 0.3s ease;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-link:hover {
   color: #FFFFFF;
+}
+
+.nav-arrow {
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-link:hover .nav-arrow {
+  opacity: 1;
+  transform: rotate(180deg);
 }
 
 .nav-link::after {
