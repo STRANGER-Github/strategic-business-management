@@ -19,6 +19,14 @@ body {
   background: #F5F5F4;
 }
 
+/* Premium Container Wrapper */
+.premium-container {
+  background: #141414;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
 /* Navigation Bar */
 .navbar {
   position: fixed;
@@ -27,14 +35,19 @@ body {
   right: 0;
   z-index: 1000;
   background: linear-gradient(to bottom, #111111, #1A1A1A);
-  transition: all 0.4s ease;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   padding: 16px 0;
 }
 
-.navbar.scrolled {
-  background: linear-gradient(to bottom, #111111, #1A1A1A);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid #2A2A2A;
+.navbar.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .nav-container {
