@@ -16,7 +16,7 @@ body {
 
 .App {
   min-height: 100vh;
-  background: #F5F5F4;
+  background: #ffffff;
 }
 
 /* Premium Container Wrapper */
@@ -145,13 +145,13 @@ body {
 
 /* Hero Section */
 .hero-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 120px 60px 80px;
-  background: linear-gradient(to bottom, #0E0E0F, #171717);
-  position: relative;
+min-height: auto; 
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 100px 60px 20px; 
+background: linear-gradient(to bottom, #444444 0%, #030303 100%);
+position: relative;
 }
 
 .hero-section::before {
@@ -194,21 +194,22 @@ body {
 }
 
 .hero-right {
-  flex: 0 0 auto;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: flex-start;
+flex: 0 0 auto;
+max-width: 400px;
+display: flex;
+flex-direction: column;
+gap: 16px; 
+align-items: flex-start;
+margin-bottom: 10px; 
 }
 
 .hero-title {
-  font-size: 96px;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -2px;
-  color: #FFFFFF;
-  text-transform: uppercase;
+font-size: 84px; 
+font-weight: 800;
+line-height: 0.95; 
+letter-spacing: -2px;
+color: #FFFFFF;
+text-transform: uppercase;
 }
 
 .hero-statement {
@@ -245,8 +246,12 @@ body {
 
 /* Featured Section */
 .featured-section {
-  padding: 80px 60px;
-  background: transparent;
+padding: 20px 20px; 
+background: #2a2a2a;
+margin-top: -30px; 
+position: relative;
+z-index: 10;
+border-radius: 0px 0px 20px 20px;
 }
 
 .featured-container {
@@ -258,7 +263,7 @@ body {
   align-items: center;
   background: #181818;
   border-radius: 20px;
-  padding: 60px;
+  padding: 60px 20px;
 }
 
 .featured-card {
@@ -403,7 +408,7 @@ body {
 
 /* Trust Section */
 .trust-section {
-  padding: 60px 60px;
+  padding: 20px 40px;
   background: #FFFFFF;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
@@ -432,8 +437,20 @@ body {
 
 /* Programs Section */
 .programs-section {
-  padding: 100px 60px;
+  padding: 0px 20px;
+  background: #ffffff;
+}
+
+.programs-section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
   background: #F5F5F4;
+  border-radius: 20px;
+  padding: 60px 20px;
 }
 
 .programs-container {
@@ -531,6 +548,7 @@ body {
 .program-card {
   position: relative;
   border-radius: 16px;
+  height: 25rem;
   overflow: hidden;
   aspect-ratio: 3/4;
   cursor: pointer;
@@ -540,6 +558,7 @@ body {
   min-width: 320px;
   flex-shrink: 0;
 }
+
 
 .program-card:hover {
   transform: translateY(-8px);
@@ -600,13 +619,13 @@ body {
 
 /* Philosophy Spacer */
 .philosophy-spacer {
-  height: 120px;
-  background: #F5F5F4;
+  height: 1020px;
+  background: #ffffff;
 }
 
 /* Philosophy Section */
 .philosophy-section {
-  padding: 120px 60px;
+  padding: 60px 60px;
   background: #0F0F0F;
 }
 

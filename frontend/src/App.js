@@ -81,15 +81,15 @@ function App() {
         </nav>
 
         {/* Hero Section */}
-        <section className="hero-section !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] !rounded-b-[20px]">
+        <section className="hero-section !mt-[20px] !rounded-t-[20px] !rounded-b-[20px]">
           <div className="hero-container">
             <div className="hero-content">
               <div className="hero-left">
-                <h1 className="hero-title !text-7xl !leading-[7rem]">Not Your Average B-School<br />B-School</h1>
+                <h1 className="hero-title !text-7xl !leading-[7rem]">Not Your Average <br/> B-School</h1>
               </div>
               <div className="hero-right !my-[50px]">
                 <p className="statement-text !font-['Tahoma'] !text-left !mt-[0px] !text-[#FFFFFF]">Education must be Liberate,Not Domesticate<br />Not Domesticate"</p>
-                <button className="btn-enroll !font-thin !leading-[1rem] !mt-[20px]">ENROLL NOW</button>
+                <button className="btn-enroll !font-thin !leading-[1rem] !mt-[20px]">ENROLL NOW </button>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ function App() {
               <p className="program-description">
                 A comprehensive postgraduate program designed to shape versatile business leaders
               </p>
-              <button className="btn-enroll-small">Enroll Now</button>
+              <button className="btn-enroll-small">Enroll Now </button>
             </div>
             
             <div className="featured-quote">
@@ -139,6 +139,7 @@ function App() {
 
       {/* Programs Section with Slider */}
       <section className="programs-section">
+        <div className="programs-section-container">
         <div className="programs-container">
           <div className="programs-header">
             <h2 className="programs-title">Programs</h2>
@@ -210,6 +211,7 @@ function App() {
             </button>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Spacer before philosophy */}
@@ -218,14 +220,8 @@ function App() {
       {/* Philosophical Banner */}
       <section className="philosophy-section !mt-[0px] !ml-[20px] !mr-[20px] !rounded-t-[20px]">
         <div className="philosophy-container-new">
-          <h2 className="philosophy-text-full !text-8xl !leading-[7rem] !tracking-[0em] !mt-[0px] !mb-[50px] !text-[#FFFFFF]">
-            Education must be Liberate, 
-
-
-
-
-            <br />
-            Not Domesticate
+          <h2 className="!text-[5.5rem] !leading-[7rem] !tracking-[0em] !mt-[0px] !mb-[10px] !text-[#FFFFFF]">
+            Education must be Liberate, Not Domesticate
           </h2>
           <div className="newsletter-section-below">
             <p className="newsletter-label !text-3xl !mb-[20px] !text-[#FFFFFF]">Subscribe to our newsletter</p>
