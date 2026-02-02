@@ -508,6 +508,20 @@ body {
   right: -24px;
 }
 
+.programs-slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 20px 0;
+}
+
+.programs-slider::-webkit-scrollbar {
+  display: none;
+}
+
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -523,6 +537,8 @@ body {
   transition: transform 0.4s ease;
   background: #FFFFFF;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 320px;
+  flex-shrink: 0;
 }
 
 .program-card:hover {
