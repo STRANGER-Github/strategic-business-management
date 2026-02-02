@@ -376,6 +376,31 @@ body {
   color: #FF7A18;
 }
 
+.btn-explore-inverted {
+  background: #FFFFFF;
+  color: #0F0F0F;
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-explore-inverted:hover {
+  background: #F0F0F0;
+  border-color: #F0F0F0;
+}
+
+.btn-explore-inverted svg {
+  color: #FF7A18;
+}
+
 /* Trust Section */
 .trust-section {
   padding: 60px 60px;
