@@ -598,6 +598,12 @@ body {
   box-shadow: 0 4px 16px rgba(255, 122, 24, 0.5);
 }
 
+/* Philosophy Spacer */
+.philosophy-spacer {
+  height: 120px;
+  background: #F5F5F4;
+}
+
 /* Philosophy Section */
 .philosophy-section {
   padding: 120px 60px;
@@ -613,6 +619,14 @@ body {
   gap: 80px;
 }
 
+.philosophy-container-new {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .philosophy-text {
   font-size: 64px;
   font-weight: 800;
@@ -621,6 +635,23 @@ body {
   letter-spacing: -1px;
   max-width: 700px;
   text-transform: uppercase;
+}
+
+.philosophy-text-full {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.newsletter-section-below {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .newsletter-section {
