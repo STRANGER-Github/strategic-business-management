@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       {/* Premium Container Wrapper */}
-      <div className="premium-container">
+      <div className="premium-container !mx-[20px] !rounded-[20px]">
         {/* Navigation */}
         <nav className="navbar nav-visible !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] !rounded-b-[20px]">
           <div className="nav-container">
