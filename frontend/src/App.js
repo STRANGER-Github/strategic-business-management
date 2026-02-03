@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import { ArrowRight, Mail, Circle, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Mail, Circle, ChevronDown, ChevronLeft, ChevronRight, Bell } from 'lucide-react';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -47,8 +47,12 @@ function App() {
         <nav className="navbar nav-visible !mt-[20px] !ml-[20px] !mr-[20px] !rounded-t-[20px] !rounded-b-[20px]">
           <div className="nav-container">
             <div className="nav-logo">
-              <Circle size={40} strokeWidth={2} color="#FFFFFF" />
-            </div>
+                <img 
+                  src="/slrtsbm_Logo.png" 
+                  alt="Logo" 
+                  className="logo-img"
+                />
+              </div>
             
             <div className="nav-links">
               <a href="#about" className="nav-link">
@@ -74,7 +78,7 @@ function App() {
             <div className="nav-actions">
               <button className="btn-apply-nav">Apply Now</button>
               <div className="profile-icon">
-                <Circle size={36} strokeWidth={2} color="#FFFFFF" />
+                <Bell size={25} strokeWidth={2} color="#FFFFFF" />
               </div>
             </div>
           </div>
@@ -102,9 +106,10 @@ function App() {
               <img
                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=300&fit=crop"
                 alt="PGDM Program"
-                className="featured-program-image" />
+                className="featured-program-image" 
+                />
 
-              <div className="program-badge">PGDM</div>
+              {/* <div className="program-badge">PGDM</div> */}
               <h3 className="program-title">PGDM (Multi-Specialisation)</h3>
               <p className="program-description">
                 A comprehensive postgraduate program designed to shape versatile business leaders
