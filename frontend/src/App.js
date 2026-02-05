@@ -92,7 +92,7 @@ function App() {
                 <h1 className="hero-title !text-7xl !leading-[7rem]">Not Your Average <br/> B-School</h1>
               </div>
               <div className="hero-right !my-[50px]">
-                <p className="statement-text !font-['Tahoma'] !text-left !mt-[0px] !text-[#FFFFFF]">Education must be Liberate,Not Domesticate<br />Not Domesticate"</p>
+                <p className="statement-text !font-['Tahoma'] !text-left !mt-[0px] !text-[#FFFFFF]">Education must be Liberate, <br />Not Domesticate"</p>
                 <button className="btn-enroll !font-thin !leading-[1rem] !mt-[20px]">ENROLL NOW </button>
               </div>
             </div>
@@ -167,8 +167,9 @@ function App() {
                     className="program-image" />
 
                     <div className="program-overlay">
+                      <p className="program-type">Undergraduate Program</p>
                       <h3 className="program-name">BBA (Hons.)</h3>
-                      <button className="btn-apply-program">Apply Now</button>
+                      <button className="btn-apply-program bg-[#0a5cda]">Apply Now</button>
                     </div>
                   </div>
                   
@@ -179,8 +180,9 @@ function App() {
                     className="program-image" />
 
                     <div className="program-overlay">
+                      <p className="program-type">Undergraduate Program</p>
                       <h3 className="program-name">B.Sc. Management</h3>
-                      <button className="btn-apply-program">Apply Now</button>
+                      <button className="btn-apply-program bg-[#0a5cda]">Apply Now</button>
                     </div>
                   </div>
                   
@@ -191,8 +193,9 @@ function App() {
                     className="program-image" />
 
                     <div className="program-overlay">
+                      <p className="program-type">Postgraduate Program</p>
                       <h3 className="program-name">PGDM Finance</h3>
-                      <button className="btn-apply-program">Apply Now</button>
+                      <button className="btn-apply-program bg-[#FF7A18]">Apply Now</button>
                     </div>
                   </div>
                   
@@ -203,8 +206,9 @@ function App() {
                     className="program-image" />
 
                     <div className="program-overlay">
+                      <p className="program-type">Postgraduate Program</p>
                       <h3 className="program-name">PGDM Business Analytics</h3>
-                      <button className="btn-apply-program">Apply Now</button>
+                      <button className="btn-apply-program bg-[#FF7A18]">Apply Now</button>
                     </div>
                   </div>
                 </React.Fragment>
@@ -266,18 +270,18 @@ function App() {
           <div className="footer-column">
             <h4 className="footer-heading">Programs</h4>
             <a href="#" className="footer-link">Undergraduate</a>
-            <a href="#" className="footer-link">BBA (Hons.)</a>
-            <a href="#" className="footer-link">B.Sc. Management</a>
-            <a href="#" className="footer-link">Postgraduate</a>
-            <a href="#" className="footer-link">PGDM (Multi-Specialisation)</a>
-            <a href="#" className="footer-link">PGDM Business Analytics</a>
-            <a href="#" className="footer-link">PGDM Finance</a>
-            <a href="#" className="footer-link">PGDM Digital Marketing</a>
-            <a href="#" className="footer-link">PGDM Cyber Law</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" /> BBA (Hons.)</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" /> B.Sc. Management</a>
+            <a href="#" className="footer-link">Postgraduate [PGDM]</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" />Multi Specialisation</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" />Business Analytics</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" />Finance</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" />Digital Marketing</a>
+            <a href="#" className="footer-link"> <ChevronRight size={15} strokeWidth={2} color="#0a5cda" />Cyber Law</a>
           </div>
           
           <div className="footer-column">
-            <h4 className="footer-heading">SLRTSBC</h4>
+            <h4 className="footer-heading">SLRTSBM</h4>
             <a href="#" className="footer-link">Frontline Health Director</a>
             <a href="#" className="footer-link">Advisory Board</a>
             <a href="#" className="footer-link">Campus</a>
